@@ -101,30 +101,6 @@ nav{
 }
 
 
-/* --- Barre de navigation --- */
-
-
-/* .menu-nav{
-
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0 10px 10px 0;
-    background-color: #37212dcd;
-    z-index: 5;
-}
-
-.container-nav{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-} */
-
-
 /* ---Blocs du site--- */
 
 
@@ -137,16 +113,12 @@ nav{
 
 .container-bloc-gauche{
     margin: auto;
-    width: 50%;
+    width: 80%;
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.container-bloc-droit{
-    width: 50%;
 }
 
 .container-bloc-droit img{
@@ -164,33 +136,34 @@ nav{
     width: 50%;
 }
 
-.bloc-contenu{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 50%;
-}
 
-.container-cv-gauche{
+/* Bloc de contenu */
+
+
+.bloc-cv{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin: 0px;
-    width: 50%;
+    width: 100%;
     background-color: #222222;
 }
 
+.partie-gauche{
+    width: 50%;
+}
+
+.partie-droite{
+    width: 50%;
+}
 .profil-pro{
     margin: 20px auto;
     padding: 0 30px;
-    width: 40%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     color: #2bff6b;
     background-color:rgb(47, 47, 47);
 }
@@ -214,7 +187,7 @@ nav{
 
 .bloc-infos-1{
     margin: 0 0;
-    width: 50%;
+    width: 80%;
 }
 
 .bloc-infos-1 p{
@@ -226,7 +199,7 @@ nav{
 
 .bloc-infos-2{
     margin: 0;
-    width: 50%;
+    width: 80%;
 }
 
 .bloc-infos-2 p{
