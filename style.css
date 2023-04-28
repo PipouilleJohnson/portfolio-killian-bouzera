@@ -181,7 +181,6 @@ nav{
     align-items: center;
     margin: 0px;
     width: 50%;
-    height: 100%;
     background-color: #222222;
 }
 
@@ -192,7 +191,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: #2bff6b;
     background-color:rgb(47, 47, 47);
 }
 
