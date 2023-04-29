@@ -29,40 +29,38 @@ html, body{
     display: flex;
     flex-direction: column;
     
-    color: rgb(43, 43, 43);
+    
+
     font-size: 15px;
+    text-transform: uppercase;
     font-family: "poppins-regular";
 }
 
-
 h1{
+    margin: 0 0;
     font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
+    text-align: start;
+}
+
+h2{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    color: #ADFF91;
+    font-family: "poppins-light";
+    text-align: start;
+}
+h3{
+    color: #ADFF91;
 }
 
 p{
-    margin: 20px auto; 
+    margin: 20px 0; 
     width: 80%;
-    text-align: center;
-}
-
-button{
-    margin: 20px 0;
-    padding: 15px 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 20px;
-    border: none;
-    color: rgb(255, 255, 255);
-    background-color: #171717;
-    border-radius: 5px;
-}
-
-button p{
-    margin: 0;
-    margin-right: 10px;
+    text-align: start;
+    color: black;
 }
 
 
@@ -88,7 +86,7 @@ nav{
 }
 
 .boutons-header{
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,25 +110,31 @@ nav{
 }
 
 .container-bloc-gauche{
-    margin: auto;
+    margin: auto auto;
     width: 80%;
     height: 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.container-bloc-gauche img{
+    margin: auto auto;
+    height: 300px;
+}
+
 .container-bloc-droit img{
-    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .bloc-paragraphe{
+    position: relative;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 100px auto;
     width: 50%;
@@ -156,55 +160,47 @@ nav{
 
 .partie-droite{
     width: 50%;
+    display: flex;
+    justify-content: start;
 }
 .profil-pro{
     margin: 20px auto;
-    padding: 0 30px;
+    padding: 20px 30px;
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #2bff6b;
     background-color:rgb(47, 47, 47);
+    box-shadow: 20px 20px 1px 1px rgb(47, 47, 47, .50);
 }
 
-.profil-pro h2{
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 30px;
-    color: #2bff6b;
-    font-family: "poppins-light";
+.profil-pro p{
+    margin: 10px auto;
+    color: #55FF1A;
     text-align: start;
 }
 
 .container-infos{
+    margin: 0 auto;
+    width: 80%;
     display: flex;
 
 }
 
 .bloc-infos-1{
-    margin: 0 0;
     width: 80%;
 }
 
 .bloc-infos-1 p{
     margin: 20px 0;
-    text-transform: uppercase;
     text-align: start;
-    color: #00ff4c;
 }
 
 .bloc-infos-2{
-    margin: 0;
     width: 80%;
 }
 
 .bloc-infos-2 p{
     margin: 20px 0;
-    text-transform: uppercase;
     text-align: start;
-    color: #00ff4c;
 }
