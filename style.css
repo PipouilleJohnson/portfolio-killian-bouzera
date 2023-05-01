@@ -26,13 +26,44 @@ nav{
     align-items: center;
 }
 
-nav button{
-    background: none;
-    border: none;
+.boutons-header{
 }
 
-nav a{
+.boutons-header button{
+    padding: 20px 40px;
+    margin: 0 20px;
+    background: none;
+    border: solid 2px black;
+    border-radius: 40px;
+}
+
+.boutons-header a{
+    color: black;
     font-size: 20px;
     font-family: "orbitron-regular";
     text-decoration: none;
+}
+
+.bloc-intro{
+    margin-top: 5%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.bloc-intro h1{
+    font-size: 50px;
+    font-family: "orbitron-black";
+    text-transform: uppercase;
+    color: black;
+}
+
+.bloc-intro p{
+    width: 65%;
+    font-size: 20px;
+    font-family: "orbitron-regular";
+    line-height: 130%;
+    letter-spacing: 2px;
+    color: black;
 }
