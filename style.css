@@ -1,220 +1,26 @@
-@font-face {
-    font-family: "poppins-medium";
-    src: url(./Poppins/Poppins-Medium.ttf);
-}
-
-@font-face {
-    font-family: "poppins-regular";
-    src: url(./Poppins/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: "poppins-light";
-    src: url(./Poppins/Poppins-Light.ttf);
-}
-
-/* 
-    Couleurs du site :
-    #5C374C
-    #985277
-    #CE6A85
-    #FF8C61
-    #FAA275
-*/
-
-html, body{
+body, html{
     margin: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    
-    
-
-    font-size: 15px;
-    text-transform: uppercase;
-    font-family: "poppins-regular";
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(assets/flying-balls-cmp.png);
 }
-
-h1{
-    margin: 0 0;
-    font-size: 30px;
-    text-align: start;
-}
-
-h2{
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 30px;
-    color: #ADFF91;
-    font-family: "poppins-light";
-    text-align: start;
-}
-h3{
-    color: #ADFF91;
-}
-
-p{
-    margin: 20px 0; 
-    width: 80%;
-    text-align: start;
-    color: rgb(255, 255, 255);
-}
-
-
-/* Header du site */
-
 
 header{
-    width: 100%;
-    background-color: #222222;
+    padding: 20px 40px;
 }
 
 nav{
-    margin: auto;
-    display: flex;
-    padding: 15px;
-    width: 80%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-header img{
-    height: 35px;
-}
-
-.boutons-header{
-    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    font-family: "poppins-light";
 }
 
-.boutons-header a{
-    cursor: pointer;
+nav button{
+    background: none;
+    border: none;
 }
 
-
-/* ---Blocs du site--- */
-
-
-.bloc-intro{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-}
-
-.container-bloc-gauche{
-    margin: 0;
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.container-bloc-gauche img{
-    margin: 0 auto;
-    height: 100%;
-}
-
-.planete{
-    top: -30%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-position: -20%;
-    object-fit: cover;
-    z-index: -2;
-}
-
-.container-bloc-droit img{
-    margin: 50px auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-    object-fit: cover;
-}
-
-.bloc-paragraphe{
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 100px auto;
-    width: 50%;
-}
-
-
-/* Bloc de contenu */
-
-
-.bloc-cv{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;
-    width: 100%;
-    background-color: #222222;
-}
-
-.partie-gauche{
-    width: 50%;
-}
-
-.partie-droite{
-    width: 50%;
-    display: flex;
-    justify-content: start;
-}
-.profil-pro{
-    margin: 20px auto;
-    padding: 20px 30px;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color:rgb(47, 47, 47);
-    box-shadow: 20px 20px 1px 1px rgb(47, 47, 47, .50);
-}
-
-.profil-pro p{
-    margin: 10px auto;
-    color: #55FF1A;
-    text-align: start;
-}
-
-.container-infos{
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-
-}
-
-.bloc-infos-1{
-    width: 80%;
-}
-
-.bloc-infos-1 p{
-    margin: 20px 0;
-    text-align: start;
-}
-
-.bloc-infos-2{
-    width: 80%;
-}
-
-.bloc-infos-2 p{
-    margin: 20px 0;
-    text-align: start;
+nav a{
+    text-decoration: none;
 }
