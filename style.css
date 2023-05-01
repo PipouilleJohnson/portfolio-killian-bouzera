@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "orbitron-black";
+    src: url(Orbitron/static/Orbitron-Black.ttf);
+}
+
+@font-face {
+    font-family: "orbitron-regular";
+    src: url(Orbitron/static/Orbitron-Regular.ttf);
+}
+
 body, html{
     margin: 0;
     padding: 0;
@@ -22,5 +32,7 @@ nav button{
 }
 
 nav a{
+    font-size: 20px;
+    font-family: "orbitron-regular";
     text-decoration: none;
 }
