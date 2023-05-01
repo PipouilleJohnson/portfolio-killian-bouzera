@@ -11,13 +11,26 @@
 body, html{
     margin: 0;
     padding: 0;
+    display: flex;
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(assets/flying-balls-cmp.png);
+    scroll-behavior: auto;
+}
+
+p{
+    font-size: 20px;
+    font-family: "orbitron-regular";
+    line-height: 130%;
+    letter-spacing: 2px;
+    color: black;
 }
 
 header{
+    margin: 0 auto;
     padding: 20px 40px;
+    position: fixed;
+    width: 95%;
 }
 
 nav{
@@ -26,15 +39,19 @@ nav{
     align-items: center;
 }
 
-.boutons-header{
-}
+/* premier ecran */
+
+#ecran-accueil{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} 
 
 .boutons-header button{
     padding: 20px 40px;
     margin: 0 20px;
     background: none;
-    border: solid 2px black;
-    border-radius: 40px;
+    border: none;
 }
 
 .boutons-header a{
@@ -44,8 +61,12 @@ nav{
     text-decoration: none;
 }
 
+.boutons-header a:hover{
+    color: rgb(189, 189, 189);
+}
+
 .bloc-intro{
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 10%;
     display: flex;
     flex-direction: column;
@@ -66,4 +87,79 @@ nav{
     line-height: 130%;
     letter-spacing: 2px;
     color: black;
+}
+
+.direction{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    right: 40px;
+
+}
+
+.direction p{
+    margin-right: 40px;
+    font-size: 20px;
+    font-family: "orbitron-regular";
+    line-height: 130%;
+    letter-spacing: 2px;
+    color: black;
+}
+
+/* deuxieme écran */
+
+#ecran-deux{
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.direction-precedante{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    left: 40px;
+}
+
+.direction-precedante img{
+    transform: rotate(180deg);
+}
+
+.direction-suivante{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    right: 40px;
+}
+
+#ecran-deux p{
+
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 30%;
+}
+
+
+
+/*  troisième écran */
+
+#ecran-trois{
+    position: absolute;
+    left: 200%;
+    width: 100%;
+    height: 50%;
+}
+
+#ecran-trois p{
+
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 30%;
 }
