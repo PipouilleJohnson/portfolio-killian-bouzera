@@ -31,12 +31,43 @@ header{
     padding: 20px 40px;
     position: fixed;
     width: 95%;
+    z-index: 100;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.reseaux{
+    position: absolute;
+    left: 40px;
+    bottom: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reseaux img{
+    height: 40px;
+}
+
+.reseaux a{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "orbitron-regular";    
+}
+
+.reseaux a p{
+    margin: 0 10px;
 }
 
 /* premier ecran */
@@ -55,10 +86,11 @@ nav{
 }
 
 .boutons-header a{
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: "orbitron-regular";
     text-decoration: none;
+    cursor: pointer;
 }
 
 .boutons-header a:hover{
@@ -154,7 +186,29 @@ nav{
     position: absolute;
     left: 200%;
     width: 100%;
-    height: 50%;
+    height: 100%;
+}
+
+.direction-precedante{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    left: 40px;
+}
+
+.direction-precedante img{
+    transform: rotate(180deg);
+}
+
+.direction-suivante{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    right: 40px;
 }
 
 #ecran-trois p{
