@@ -15,7 +15,7 @@ body, html{
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(assets/flying-balls-cmp.png);
-    scroll-behavior: auto;
+    scroll-snap-type: y mandatory;
 }
 
 p{
@@ -38,6 +38,13 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
 .reseaux{
@@ -76,6 +83,7 @@ nav{
     position: absolute;
     width: 100%;
     height: 100%;
+    scroll-snap-align: center;
 } 
 
 .boutons-header button{
@@ -147,6 +155,7 @@ nav{
     left: 100%;
     width: 100%;
     height: 100%;
+    scroll-snap-align: center;
 }
 
 .direction-precedante{
@@ -187,6 +196,7 @@ nav{
     left: 200%;
     width: 100%;
     height: 100%;
+    scroll-snap-align: center;
 }
 
 .direction-precedante{
