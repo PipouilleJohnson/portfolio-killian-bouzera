@@ -11,6 +11,7 @@
 body, html{
     margin: 0;
     padding: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
@@ -28,13 +29,18 @@ p{
 
 header{
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px 0;
     position: fixed;
-    width: 95%;
-    z-index: 100;
+    width: 100%;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: solid 2px black ;
 }
 
 nav{
+    margin: auto;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,13 +49,17 @@ nav{
 .container{
     width: 100%;
     height: 100%;
+    
 }
 
 
 .degrade{
+    position: absolute;
+    top: 550px;
     width: 100%;
     height: 500px;
-    background-color: white;
+    background: linear-gradient(rgba(0,0,0,0), white);
+    z-index: 0;
 }
 
 /* premier ecran */
@@ -58,6 +68,7 @@ nav{
     margin: auto;
     width: 80%;
     height: 100%;
+    z-index: 100;
 } 
 
 .boutons-header button{
@@ -103,14 +114,23 @@ nav{
 }
 
 /* ecran deux */
-.ecran-deux{
+#ecran-deux{
+    position: relative;
+    margin-top: 500px;
     width: 100%;
     height: 100%;
+    z-index: 150;
+}
+
+#ecran-deux p{
+    width: 30%;
+    margin: 10%;
 }
 
 #image-bouteille{
-    margin: 10% 40%;
-    position: absolute;
+    margin: -10% 0;
+    left: 40%;
+    position: relative;
     width: 50%;
     border: solid 20px white;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
@@ -118,8 +138,9 @@ nav{
 }
 
 #image-bouteille-deux{
-    margin: 12% 10%;
-    position: absolute;
+    margin: -10% 0;
+    left: 5%;
+    position: relative;
     width: 50%;
     border: solid 20px white;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
@@ -127,9 +148,17 @@ nav{
 }
 
 .footer{
+    width: 100%;
+    padding: 0 10%;
+    position: relative;
+    top:800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#ecran-trois{
+    width: 100%;
 }
 
 .reseaux{
