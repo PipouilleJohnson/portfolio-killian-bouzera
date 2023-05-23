@@ -162,6 +162,10 @@ nav{
     transform: rotate(5deg);
 }
 
+#rendu-maison{
+    width: 100%;
+}
+
 
 
 #ecran-trois, .container-blasons{
@@ -175,7 +179,7 @@ nav{
 }
 
 #ecran-trois h2, #ecran-trois p{
-    width: 60%;
+    width: 40%;
     margin-left: 5%;
     color: white;
 }
