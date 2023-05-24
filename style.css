@@ -129,7 +129,7 @@ nav{
 
 #ecran-deux p{
     width: 30%;
-    margin: 10%;
+    margin: 0 10%;
 }
 
 #image-bouteille{
@@ -164,6 +164,7 @@ nav{
 
 #rendu-maison{
     width: 100%;
+    height: 100%;
 }
 
 
@@ -173,7 +174,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: black;
 }
@@ -185,7 +186,7 @@ nav{
 }
 
 #blason-snk{
-    height: 500px;
+    height: 400px;
 }
 
 
