@@ -64,6 +64,7 @@ a{
 .container-flex-row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -204,9 +205,9 @@ nav{
     transform: rotate(5deg);
 }
 
-#rendu-maison, #bureau-futur{
-    margin:20px 10px;
-    width: 48%;
+#rendu-maison, #bureau-futur, #station-oxygen, #gamme-piano{
+    /* margin:20px 10px; */
+    width: 50%;
 }
 
 
