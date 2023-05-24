@@ -38,6 +38,36 @@ p{
     color: black;
 }
 
+a{
+    font-size: 20px;
+    font-family: "orbitron-regular";
+    line-height: 130%;
+    letter-spacing: 2px;
+    color: black;
+    cursor: pointer;
+}
+
+.bouton-action{
+    position: relative;
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px 20px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.bouton-action:hover{
+    background-color: rgb(148, 148, 148);
+}
+
+.container-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* header */
 header{
     margin: 0 auto;
     top: 0;
@@ -129,7 +159,7 @@ nav{
 
 #ecran-deux p{
     width: 30%;
-    margin: 0 10%;
+    margin: 10%;
 }
 
 #image-bouteille{
@@ -162,10 +192,10 @@ nav{
     transform: rotate(5deg);
 }
 
-#rendu-maison{
-    width: 100%;
-    height: 100%;
+#rendu-maison, #bureau-futur{
+    width: 50%;
 }
+
 
 
 
@@ -179,6 +209,10 @@ nav{
     background-color: black;
 }
 
+.container-blasons{
+    margin: 20px 0;
+}
+
 #ecran-trois h2, #ecran-trois p{
     width: 40%;
     margin-left: 5%;
@@ -187,15 +221,17 @@ nav{
 
 #blason-snk{
     height: 400px;
+    
 }
+
 
 
 
 /* footer */
 .footer{
     width: 100%;
+    margin: 50px 0;
     position: relative;
-    top:800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
