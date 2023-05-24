@@ -43,6 +43,7 @@ a{
     font-family: "orbitron-regular";
     line-height: 130%;
     letter-spacing: 2px;
+    text-decoration: none;
     color: black;
     cursor: pointer;
 }
@@ -63,6 +64,13 @@ a{
 .container-flex-row{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
@@ -92,6 +100,10 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo-header p{
+    margin-left: 2px;
 }
 
 .logo-header img{
@@ -193,7 +205,8 @@ nav{
 }
 
 #rendu-maison, #bureau-futur{
-    width: 50%;
+    margin:20px 10px;
+    width: 48%;
 }
 
 
@@ -207,6 +220,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-color: black;
+    background-image: url("assets/render shiganshina 2.png");
+    background-position: 20px;
 }
 
 .container-blasons{
