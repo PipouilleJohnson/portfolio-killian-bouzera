@@ -240,6 +240,23 @@ nav{
     
 }
 
+#ecran-quatre{
+    width: 100%;
+}
+
+#ecran-quatre video{
+    width: 100%;
+    position: relative;
+}
+#ecran-quatre h2{
+    width: 100%;
+    margin: 0 auto;
+    top: 5000px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 999;
+}
 
 
 
