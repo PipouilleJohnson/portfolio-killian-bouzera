@@ -77,7 +77,6 @@ a{
 .bloc-texte{
     margin-left: 5%;
     position: absolute;
-    color: white;
 }
 
 
@@ -114,17 +113,22 @@ nav{
 }
 
 .logo-header img{
-    height: 50px;
+    max-height: 50px;
 }
 
-.boutons-header button{
+#boutons-header{
+    display: flex;
+    
+}
+
+#boutons-header button{
     padding: 20px 40px;
     margin: 0 20px;
     background: none;
     border: none;
 }
 
-.boutons-header a{
+#boutons-header a{
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: "orbitron-regular";
@@ -132,15 +136,47 @@ nav{
     cursor: pointer;
 }
 
-.boutons-header a:hover{
+#boutons-header a:hover{
     color: rgb(189, 189, 189);
 }
+
+#menu-burger{
+    margin: auto 0;
+    height: 40px;
+    display: none;
+}
+
+/* A ce niveau les boutons du header disparaissent pour laisser apparaitre le 
+menu burger */
+@media screen and (max-width: 900px) {
+    #boutons-header{
+        display: none;
+    }
+    #menu-burger{
+        display: block;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+}
+
+
 
 .container{
     width: 100%;
     position: absolute;
-    
 }
+
+
 
 /* premier ecran */
 
@@ -160,12 +196,33 @@ nav{
 
 .bloc-intro p{
     width: 65%;
-    font-size: 20px;
-    font-family: "orbitron-regular";
     line-height: 130%;
     letter-spacing: 2px;
     color: black;
 }
+
+@media screen and (max-width: 900px) {
+    .bloc-intro{
+        width: 100%;
+        height: 70%;
+    }
+
+    .bloc-intro h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    .bloc-intro p{
+        width: 100%;
+        line-height: 130%;
+        letter-spacing: 2px;
+        color: black;
+        text-align: center;
+    }
+
+}
+
+
 
 /* ecran deux */
 #ecran-deux{
@@ -216,6 +273,30 @@ nav{
     width: 50%;
 }
 
+@media screen and (max-width: 900px) {
+    #ecran-deux{
+        position: relative;
+        margin-top: 200px;
+        width: 100%;
+        height: 100%;
+        z-index: 150;
+    }
+
+    #ecran-deux p{
+        width: 80%;
+        margin: 20% auto;
+    }
+
+    #image-bouteille, #image-bouteille-deux, #unconsumed{
+        border: solid 10px white;
+    }
+
+    #rendu-maison, #bureau-futur, #station-oxygen, #gamme-piano{
+        /* margin:20px 10px; */
+        width: 100%;
+    }
+}
+
 
 
 
@@ -227,6 +308,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-image: url("assets/render shiganshina 2.png");
     background-position: 20px;
 }
@@ -245,12 +328,24 @@ nav{
     height: 400px;
     
 }
-
-
+@media screen and (max-width: 900px) {
+    #ecran-trois h2, #ecran-trois p{
+        width: 90%;
+        margin-left: 0;
+        margin: 10px auto;
+        text-align: center;
+        color: white;
+    }
+    
+    #blason-snk{
+        height: 200px;
+    } 
+}
 
 
 #ecran-quatre{
     width: 100%;
+    background-color: black;
 }
 
 #ecran-quatre video{
@@ -265,17 +360,27 @@ nav{
     position: absolute;
     text-align: center;
     color: white;
-    z-index: 999;
+    z-index: 998;
 }
 
 .bloc-texte{
     top: 5560px;
     width: 30%;
+    color: white;
 }
 
 .bloc-texte h2, .bloc-texte p{
     color: white;
 }
+
+@media screen and (max-width: 900px) {
+    #rendu-maison, #bureau-futur, #station-oxygen, #gamme-piano{
+        /* margin:20px 10px; */
+        width: 100%;
+    }
+}
+
+
 
 
 /* footer */
@@ -314,4 +419,24 @@ nav{
 
 .reseaux a p{
     margin: 0 10px;
+}
+@media screen and (max-width: 900px) {
+    .reseaux{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .reseaux a{
+        margin: 10px 0;
+        padding: 0 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        font-family: "orbitron-regular";    
+    }
+
 }
