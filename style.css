@@ -74,6 +74,12 @@ a{
     justify-content: space-around;
 }
 
+.bloc-texte{
+    margin-left: 5%;
+    position: absolute;
+    color: white;
+}
+
 
 
 /* header */
@@ -240,6 +246,9 @@ nav{
     
 }
 
+
+
+
 #ecran-quatre{
     width: 100%;
 }
@@ -249,7 +258,7 @@ nav{
     width: 100%;
     position: relative;
 }
-#ecran-quatre h2{
+#mon-travail{
     width: 100%;
     margin: 0 auto;
     top: 5000px;
@@ -259,6 +268,14 @@ nav{
     z-index: 999;
 }
 
+.bloc-texte{
+    top: 5560px;
+    width: 30%;
+}
+
+.bloc-texte h2, .bloc-texte p{
+    color: white;
+}
 
 
 /* footer */
