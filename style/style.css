@@ -1,11 +1,11 @@
 @font-face {
     font-family: "orbitron-black";
-    src: url(Orbitron/static/Orbitron-Black.ttf);
+    src: url(../Orbitron/static/Orbitron-Black.ttf);
 }
 
 @font-face {
     font-family: "orbitron-regular";
-    src: url(Orbitron/static/Orbitron-Regular.ttf);
+    src: url(../Orbitron/static/Orbitron-Regular.ttf);
 }
 
 body, html{
@@ -13,7 +13,7 @@ body, html{
     padding: 0;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: url(assets/background-bubbles.jpg);
+    background-image: url(../assets/img/background-bubbles.jpg);
 }
 
 h1{
