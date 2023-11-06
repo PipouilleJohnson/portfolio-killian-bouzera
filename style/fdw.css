@@ -1,12 +1,26 @@
-#titre-fdw{
-    width: 70%;
+#intro-fdw{
+    width: 50%;
     margin: 100px auto;
 }
 
+.bloc-information-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
 
+.bloc-information-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
-
+video{
+    height: 500px;
+}
 
 
 
