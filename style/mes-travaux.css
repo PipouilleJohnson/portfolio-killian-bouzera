@@ -25,6 +25,12 @@ body, html{
     justify-content: space-between;
     align-items: center;
     width: 400px;
+    transition: transform 0.1s;
+}
+
+
+.bloc-travail:hover{
+    transform: scale(105%);
 }
 
 .bloc-travail img{
