@@ -1,6 +1,23 @@
+html, body{
+    background: black;
+    color: white;
+}
+
+.container{
+    color: white;
+}
+
+
+
 #intro-fdw{
-    width: 50%;
+    width: 60%;
     margin: 100px auto;
+    margin-left: 10%;
+    color: white;
+}
+
+#intro-fdw p{
+    padding-left: 20%;
 }
 
 .bloc-information-row{
@@ -9,6 +26,13 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    margin: auto;
+    color: white;
+}
+
+.bloc-information-row p, .bloc-information-column p{
+    width: 40%;
+    margin: 100px auto;
 }
 
 .bloc-information-column{
@@ -16,13 +40,26 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    margin: 200px auto;
+    color: white;
+    text-align: center;
 }
 
-video{
+.paysage{
+    height: 500px;
+    width: 50%;
+}
+
+.portrait{
+    height: 700px;
+}
+
+.footer, .footer p{
+    color: white;
+}
+
+img{
     height: 500px;
 }
-
-
-
-
 

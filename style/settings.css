@@ -11,20 +11,21 @@
 body, html{
     margin: 0;
     padding: 0;
+    color: black;
 }
 
 h1{
     font-size: 50px;
     font-family: "orbitron-black";
     text-transform: uppercase;
-    color: black;
+    
 }
 
 h2{
     font-size: 40px;
     font-family: "orbitron-black";
     text-transform: uppercase;
-    color: black;
+    
 }
 
 p{
@@ -32,7 +33,7 @@ p{
     font-family: "orbitron-regular";
     line-height: 130%;
     letter-spacing: 2px;
-    color: black;
+    
 }
 
 a{
@@ -125,7 +126,7 @@ header{
     width: 100%;
     z-index: 999;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
     border-bottom: solid 2px black ;
 }
 
