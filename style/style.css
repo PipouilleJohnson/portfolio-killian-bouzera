@@ -1,184 +1,11 @@
-@font-face {
-    font-family: "orbitron-black";
-    src: url(../Orbitron/static/Orbitron-Black.ttf);
-}
-
-@font-face {
-    font-family: "orbitron-regular";
-    src: url(../Orbitron/static/Orbitron-Regular.ttf);
-}
-
 body, html{
-    margin: 0;
-    padding: 0;
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(../assets/img/background-bubbles.jpg);
 }
 
-h1{
-    font-size: 50px;
-    font-family: "orbitron-black";
-    text-transform: uppercase;
-    color: black;
-}
-
-h2{
-    font-size: 40px;
-    font-family: "orbitron-black";
-    text-transform: uppercase;
-    color: black;
-}
-
-p{
-    font-size: 20px;
-    font-family: "orbitron-regular";
-    line-height: 130%;
-    letter-spacing: 2px;
-    color: black;
-}
-
-a{
-    font-size: 20px;
-    font-family: "orbitron-regular";
-    line-height: 130%;
-    letter-spacing: 2px;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
-
-.bouton-action{
-    position: relative;
-    background-color: white;
-    border-radius: 50px;
-    padding: 15px 20px;
-    margin: 20px 0;
-    cursor: pointer;
-}
-
-.bouton-action:hover{
-    background-color: rgb(148, 148, 148);
-}
-
-.container-flex-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.container-flex-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.bloc-texte{
-    margin: 10% 5%;
-}
-
-
-
-/* header */
-header{
-    margin: 0 auto;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.2);
-    border-bottom: solid 2px black ;
-}
-
-nav{
-    margin: auto;
-    padding: 5px 0; 
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-header, .logo-header a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-header p{
-    margin-left: 2px;
-}
-
-.logo-header img{
-    max-height: 50px;
-}
-
-#boutons-header{
-    display: flex;
-    
-}
-
-#boutons-header button{
-    padding: 20px 40px;
-    margin: 0 20px;
-    background: none;
-    border: none;
-}
-
-#boutons-header a{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-family: "orbitron-regular";
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#boutons-header a:hover{
-    color: rgb(189, 189, 189);
-}
-
-#menu-burger{
-    margin: auto 0;
-    height: 40px;
-    display: none;
-}
-
-/* A ce niveau les boutons du header disparaissent pour laisser apparaitre le 
-menu burger */
-@media screen and (max-width: 900px) {
-    #boutons-header{
-        display: none;
-    }
-    #menu-burger{
-        display: block;
-    }
-
-    h1{
-        font-size: 40px;
-    }
-
-    h2{
-        font-size: 30px;
-    }
-
-    p{
-        font-size: 15px;
-    }
-}
-
-
-
-.container{
-    width: 100%;
-    position: absolute;
-}
-
-
 
 /* premier ecran */
-
 #ecran-accueil{
     margin: auto;
     width: 80%;
@@ -358,7 +185,12 @@ menu burger */
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: rgb(212, 212, 212);
+}
+
+#titre-fdw{
+    width: 40%;
+    text-align: center;
 }
 
 .contenu-fdw{
@@ -375,6 +207,7 @@ menu burger */
 
 #logo-fdw{
     width: 40%;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
 }
 
 
@@ -420,60 +253,3 @@ menu burger */
 
 
 
-/* footer */
-.footer{
-    width: 100%;
-    margin: 50px 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.reseaux{
-    padding: 0 5%;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.reseaux img{
-    height: 40px;
-}
-
-.reseaux a{
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: "orbitron-regular";    
-}
-
-.reseaux a p{
-    margin: 0 10px;
-}
-@media screen and (max-width: 900px) {
-    .reseaux{
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    }
-
-    .reseaux a{
-        margin: 10px 0;
-        padding: 0 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: black;
-        font-size: 20px;
-        text-decoration: none;
-        font-family: "orbitron-regular";    
-    }
-
-}
