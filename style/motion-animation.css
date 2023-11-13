@@ -3,13 +3,25 @@ html, body{
     color: white;
 }
 
-h1,h2,h3{
-    color: white;
+h1,h2,h3, p{
+    color: white;  
 }
 
+h1{
+    text-shadow: 10px 10px 0px rgba(255, 0, 0, 0.3), -10px -10px 0px rgba(0, 238, 255, 0.3);
+    text-align: center;
+}
+
+p{
+    width: 80%;
+    margin: 50px auto;
+}
+
+
+
+
+
 /* Travaux d'animation */
-
-
 #travaux-animation{
     width: 100%;
     background-color: black;

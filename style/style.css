@@ -5,6 +5,7 @@ body, html{
 }
 
 
+
 /* premier ecran */
 #ecran-accueil{
     margin: auto;
@@ -20,8 +21,13 @@ body, html{
     width: 60%;
 }
 
+.bloc-intro h1{
+    width: 100%;
+    text-shadow: 10px 10px 0px rgba(255, 0, 0, 0.3), -10px -10px 0px rgba(0, 238, 255, 0.3);
+}
+
 .bloc-intro p{
-    width: 65%;
+    width: 100%;
     line-height: 130%;
     letter-spacing: 2px;
     color: black;
@@ -36,6 +42,7 @@ body, html{
     .bloc-intro h1{
         width: 100%;
         text-align: center;
+        text-shadow: 10px 10px 0px rgba(255, 0, 0, 0.3), -10px -10px 0px rgba(0, 238, 255, 0.3);
     }
 
     .bloc-intro p{
