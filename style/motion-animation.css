@@ -1,0 +1,59 @@
+html, body{
+    background: black;
+    color: white;
+}
+
+h1,h2,h3{
+    color: white;
+}
+
+/* Travaux d'animation */
+
+
+#travaux-animation{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#travaux-animation video{
+    width: 60%;
+    margin: auto;
+}
+
+#mon-travail{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.bloc-texte{
+    text-align: end;
+}
+
+.bloc-texte h2, .bloc-texte p{
+    color: white;
+}
+
+.range-video{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.titre-animation-bouton{
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer, .footer p{
+    color: white;
+}
